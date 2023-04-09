@@ -8,12 +8,12 @@ default: infer
 
 ROOT_DIR = .
 include $(ROOT_DIR)/Makefile.config
-
+  
 MAKE_SOURCE = $(MAKE) -C $(SRC_DIR)
 
 ifneq ($(UTOP),no)
 BUILD_SYSTEMS_TESTS += infertop
-endif
+endif  
 
 ifeq ($(BUILD_C_ANALYZERS),yes)
 BUILD_SYSTEMS_TESTS += \
